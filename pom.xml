@@ -1,0 +1,179 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mathartsys.sales</groupId>
+  <artifactId>merchandising</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>merchandising Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+   <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.9</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
+    <!--jersey-->
+    <dependency>
+     	<groupId>org.glassfish.jersey.core</groupId>
+     	<artifactId>jersey-server</artifactId>
+     	<version> 2.17 </version>
+     </dependency>
+  
+     <dependency>
+     	<groupId>org.glassfish.jersey.containers</groupId>
+     	<artifactId>jersey-container-servlet</artifactId>
+     	<version>2.17</version>
+	</dependency>
+	
+	<dependency>
+   		<groupId>org.glassfish.jersey.ext</groupId>
+    	<artifactId>jersey-mvc-jsp</artifactId>
+    	<version> 2.17 </version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.glassfish.jersey.media</groupId>
+    	<artifactId>jersey-media-json-jackson</artifactId>
+    	<version>2.17</version>
+	</dependency>
+
+	<!--end of jersey-->
+	
+	<!--mongo-->
+	<dependency>
+    	<groupId>org.mongodb</groupId>
+    	<artifactId>mongo-java-driver</artifactId>
+    	<version>2.13.0</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.springframework.data</groupId>
+    	<artifactId>spring-data-mongodb</artifactId>
+    	<version>1.7.0.RELEASE</version>
+	</dependency>
+     <!--end of mongo-->
+     
+     <!--ECharts  -->
+     <dependency>
+  		<groupId>com.github.abel533</groupId>
+  		<artifactId>ECharts</artifactId>
+  		<version>3.0.0</version>
+	</dependency>
+     
+     <!--spring-->
+     <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-core</artifactId>
+    	<version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-aop</artifactId>
+    	<version>4.1.6.RELEASE</version>
+	</dependency>
+
+    <!--end of spring-->
+    
+    <!--jersey-spring-->
+    <dependency>
+    	<groupId>org.glassfish.jersey.ext</groupId>
+    	<artifactId>jersey-spring3</artifactId>
+    	<version>2.17</version>
+    	<!--  -->
+    	<exclusions>
+        	<exclusion>
+            	<groupId>org.springframework</groupId>
+            	<artifactId>spring-core</artifactId>
+        	</exclusion>
+    		<exclusion>
+            	<groupId>org.springframework</groupId>
+            	<artifactId>spring-web</artifactId>
+        	</exclusion>
+        	<exclusion>
+            	<groupId>org.springframework</groupId>
+            	<artifactId>spring-beans</artifactId>
+        	</exclusion>
+        	<exclusion>
+            	<groupId>org.springframework</groupId>
+            	<artifactId>spring-aop</artifactId>
+        	</exclusion>
+        	<exclusion>
+            	<groupId>org.springframework</groupId>
+            	<artifactId>spring-context</artifactId>
+        	</exclusion>
+    	</exclusions>  
+    	          
+	</dependency>
+	<!--end of jersey-spring-->
+     
+     <dependency>
+    	<groupId>org.jfree</groupId>
+    	<artifactId>jfreechart</artifactId>
+    	<version>1.0.19</version>
+	</dependency>
+  </dependencies>
+  <build>
+  
+    <finalName>merchandising</finalName>
+    <directory>target</directory><!-- 这是打包的文件的路径。默认是该工程的根目录。 -->
+	<sourceDirectory>src</sourceDirectory><!-- 源文件名夹的名称。这里对应填写我们的src目录。 -->
+	<outputDirectory>WebRoot/WEB-INF/classes</outputDirectory><!--编译后的Java文件输出的文件夹位置。  -->
+	<testSourceDirectory>test/java</testSourceDirectory><!-- 测试文件源文件夹。这里与src文件夹的定义是相同的。在打包时有区别，打包时，test文件夹下的源文件和资源文件都不被打到war包里面。 -->
+	<resources><!-- 存放资源文件。这里的文件不需要编译，在部署打包时，直接复制这里的文件 -->
+		<resource>
+		<directory>src/resources</directory><!--  -->
+			<excludes>
+				<exclude>**/*.java</exclude><!--例外的文件类型。如果这里存放有.java文件，则仍然需要编译。  -->
+			</excludes>
+		</resource>
+	</resources>
+	<testResources><!-- 与上面resource的意义相同。 -->
+		<testResource>
+			<directory>test/resources</directory>
+			<excludes>
+				<exclude>**/*.java</exclude>
+			</excludes>
+		</testResource>
+	</testResources> 
+	<scriptSourceDirectory>index.jsp</scriptSourceDirectory>
+    
+    
+        <pluginManagement>
+        <plugins>
+            <plugin>
+            <!-- 配置tomcat7插件 -->
+            	<groupId>org.apache.tomcat.maven</groupId>
+   	 			<artifactId>tomcat7-maven-plugin</artifactId>
+              	<version>2.2</version>
+            </plugin>  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-compiler-plugin</artifactId>
+    			<version>3.0</version>				
+    			<configuration>  
+        			<source>1.7</source>  
+        			<target>1.7</target>  
+    			</configuration>  
+			</plugin>         
+        </plugins>			
+    </pluginManagement>
+  </build>
+</project>

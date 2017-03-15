@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+html { -webkit-text-size-adjust:none; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, th, td {
+	margin:0; 
+	padding:0; 
+	}
+table {
+	border-collapse:collapse; 
+	border:0; 
+	}
+img { 
+	border:0; 
+	}
+li { 
+	list-style:none; 
+	}
+h1, h2, h3, h4, h5, h6 { 
+	font-size:100%;
+	}
+input { 
+	border:0; 
+	font-size:100%; 
+	}
+
+div-inline{
+	 border-right-color:#000;
+}
+
+.fix { 
+	clear:both; 
+	zoom:1; 
+	}
+	
+.fix:after{ 
+	display:block; 
+	clear:both; 
+	height:0; 
+	overflow:hidden; 
+	visibility:hidden; 
+	content:"."; 
+	} 
+
+body { 
+	font:12px/18px Arial, Helvetica, sans-serif,"宋体"; 
+	color:#6e6e6e; 
+	background:#1b5799 url(../images/bodybg.png) repeat-x;
+	}
+	
+a { 
+	color:#266392; 
+	font-size:14px;
+	text-decoration:none;
+	}
+	
+ 	
+input, select, teatarea { 
+	font:12px Arial, Helvetica, sans-serif;
+	 }
+.check_city { 
+	margin-left: 10px;
+	}
+.checked_city { 
+	margin-left: 10px;
+	}
+
+
+/*right*/
+.right { 
+	padding-right:20px; 
+	min-height:450px; 
+	_height:450px;
+	}
+.current { 
+	padding-left:20px; 
+	line-height:34px; 
+	color:#494a4c; 
+	background:url(../images/icon.png) no-repeat 0 -315px;
+	}
+.current a {
+	color:#494a4c;
+	}
+.rightCont { 
+	border:1px solid #ddd; 
+	padding:10px 30px;
+	background:#fff;
+	 }
+.rightCont .title {
+	padding-bottom:10px; 
+	border-bottom:2px solid #99c7f4;
+	}
+.rightCont .title li { 
+	position:relative; 
+	float:left; 
+	border-left:1px solid #ddd;
+	}
+.rightCont .title li.action { 
+	float:right; 
+	border:none;
+	}
+.rightCont .title a { 
+	display:block; 
+	width:118px; 
+	height:24px; 
+	margin:0 10px; 
+	text-align:center; 
+	line-height:24px;
+	}
+.rightCont .title .action a { 
+	width:67px; 
+	height:25px; 
+	line-height:25px;
+	background:url(../images/btn05.gif) no-repeat; 
+	padding-left:20px;
+	}
+.rightCont .title .action a:hover { 
+	background:url(../images/btn05.gif) no-repeat; 
+	color:#266392; 
+	font-weight:normal;
+	}
+.rightCont .title .first {}
+.rightCont .title a:hover, .rightCont .title .on a { 
+	background:url(../images/titlebg1.png) no-repeat; 
+	text-decoration:none; 
+	color:#fff; 
+	font-weight:700;
+	}
+.rightCont .title span { 
+	position:absolute; 
+	width:9px; 
+	height:5px; 
+	bottom:-17px;
+	_bottom:-27px;
+	right:66px;
+	 }
+.rightCont .title a:hover span, .rightCont .title .on a span { 
+	background:url(../images/icon.png) no-repeat 0 -356px;
+	}
+.tab1 {
+	margin-top:5px;
+	}
+.tab1 td{ 
+	padding:5px 0;
+	}
+.tab1 select { 
+	width:120px;
+	}
+.allInput { 
+	width:120px; 
+	height:23px; 
+	line-height:23px; 
+	border:1px solid #c3ced0;
+	}
+.w323 { 
+	width:323px;
+	}
+.w110 { 
+	width:120px;
+	}
+.radioIn { 
+	position:relative; 
+	top:2px; 
+	margin-left:20px; 
+	cursor:pointer;
+	}
+.tab1 .date, .fabuzixun .date {
+	position:relative; 
+	cursor:pointer; 
+	top:6px; *top:0; 
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	margin:0 5px;
+	 background:url(../images/icon.png) no-repeat 0 -381px;
+	 }
+.tabSub { 
+	cursor:pointer; 
+	width:63px;
+	 height:27px; 
+	 background:url(../images/btn03.gif) no-repeat; 
+	 color:#333;
+	 }
+.tabSub:hover {
+	color:#5d7731; 
+	background:url(../images/btn02.gif) no-repeat;
+	}
+.zixun .title2 { 
+	height:31px;
+	line-height:31px;
+	 padding-left:25px; 
+	 background:url(../images/icon.png) repeat-x 0 -405px; 
+	 border-bottom:1px solid #aec7e5;
+	 }
+.tab2 th { 
+	font-weight:normal; 
+	height:29px; 
+	line-height:29px; 
+	background:#e5f0ff; 
+	border-top:1px solid #fff; 
+	border-bottom:1px solid #ddd;
+	}
+.tab2 td{ 
+	text-align:center; 
+	padding:5px 0; 
+	border-bottom:1px solid #ddd;
+	}
+.tab2 .action td { 
+	background:#f5f5f5; 
+	text-align:left;
+	}
+.tab2 .btn03, .fabuzixun .btn03, .tab3 .btn03, .y_btn .btn03, .bbtn03 {
+	display:inline-block; 
+	width:63px; 
+	height:27px; 
+	margin-left:10px; 
+	text-align:center; 
+	line-height:27px; 
+	background:url(../images/btn03.gif) no-repeat;
+	 color:#333;}
+.tji .tabSub { float:left;}
+.bbtn03 { float:left; display:inline;}
+.tab2 .btn03:hover, .fabuzixun .btn03:hover, .tab3 .btn03:hover, .y_btn .btn03:hover, .bbtn03:hover {
+	color:#5d7731; 
+	background:url(../images/btn02.gif) no-repeat; 
+	text-decoration:none;
+	}
+.tab2 .tijiao, .tab2 select { 
+	float:right; 
+	display:inline; 
+	margin-right:10px;
+	}
+.tab2 select  { margin-top:3px;}
+/*page*/
+.page { 
+	float:right; 
+	margin:10px 0; 
+	line-height:25px;
+	}
+.w28 { 
+	width:28px; 
+	height:23px; 
+	line-height:23px; 
+	text-align:center;
+	}
+.page a { display:inline-block;}
+.page .pre, .page .next { 
+	width:57px; 
+	height:23px; 
+	background:url(../images/page.gif) no-repeat; 
+	line-height:23px; 
+	text-indent:-9999px;
+	border:1px solid #ccc; 
+	}
+.page .pre {
+	margin:0 10px 0 0;
+	}
+.page .next { 
+	background-position:left bottom; 
+	margin:0 2px 0 7px;
+	}
+
+.page .first, .page .last { 
+	width:57px; height:23px; 
+	background:url(../images/page_be.gif) no-repeat; 
+	line-height:23px; 
+	text-indent:-9999px;
+	border:1px solid #ccc; }
+.page .first { margin:0 10px 0 15px;}
+.page .last { 
+	background-position:left bottom; 
+	margin:0 20px 0 7px;
+	}
+
+.page .num {
+	width:25px;
+	 height:23px; 
+	 line-height:23px; 
+	 margin-right:3px; 
+	 text-align:center; 
+	 border:1px solid #ccc; 
+	 color:#333;
+	 }
+.page .cur { 
+	display:inline-block; 
+	width:25px; 
+	height:23px; 
+	margin-right:3px; 
+	line-height:23px; 
+	text-align:center; 
+	border:1px solid #468bbe; 
+	color:#468bbe;}
+.page .num:hover { 
+	background:#4c8ccc; 
+	border:1px solid #4c8ccc; 
+	color:#fff; 
+	text-decoration:none;
+	}
+.page .go { 
+	display:inline-block; 
+	width:25px; 
+	height:23px; 
+	line-height:23px; 
+	text-align:center; 
+	border:1px solid #ccc;
+	}
+.page b{ color:#2979b4}
+
+
+
+/*浏览管理员*/
+.g_title { 
+	height:27px; 
+    line-height:27px; 
+    font-size:14px; 
+    color:#6e6e6e; 
+    font-weight:700; 
+    border-bottom:2px solid #99C7F4; 
+    padding-bottom:5px; 
+    margin-bottom:5px;
+} 
+.g_title .Wdate
+{
+	float:right; 
+	height:25px; 
+	width:90px; 
+}
+.g_title .time{
+	float:right; 
+	font-size:12px;
+} 
+
+
+.g_title .select {
+    font-size:14px; 
+    font-weight:normal; 
+    width:70px; 
+    height:30px;   
+    text-align:center; 
+    line-height:25px; 
+    color:#266392;
+}
+
+.g_title .btn03 {
+	float:right; 
+    font-size:12px; 
+    font-weight:normal; 
+    width:53px; 
+    height:30px; 
+    padding-left:10px; 
+    margin-left:10px; 
+    text-align:center; 
+    line-height:25px; 
+    background:url(../images/btn03.gif) no-repeat; 
+    color:#266392;
+}
+.g_title .btn04 {
+	float:right; 
+    font-size:12px; 
+    font-weight:normal; 
+    width:53px; 
+    height:30px; 
+    padding-left:10px; 
+    margin-left:10px; 
+    text-align:center; 
+    line-height:25px; 
+    background:url(../images/btn02.gif);  
+    color:#266392;
+	}
+	
+.g_title .btn05 {
+	float:right; 
+    font-size:12px; 
+    font-weight:normal; 
+    width:63px; 
+    height:26px; 
+    padding-left:10px; 
+    margin-left:10px; 
+    text-align:center; 
+    line-height:25px; 
+    background:url(../images/btn02.gif);  
+    color:#266392;
+	}	
+	
+
+.g_title .btn09 { float:right; font-size:12px; font-weight:normal; width:68px; height:25px; padding-left:20px; margin-left:10px; text-align:center; line-height:25px; background:url(../images/btn09.gif) no-repeat; color:#266392;}
+.g_title .btn10 { float:right; font-size:12px; font-weight:normal; width:68px; height:25px; padding-left:20px; margin-left:10px; text-align:center; line-height:25px; background:url(../images/btn10.gif) no-repeat; color:#266392;}
+.g_title .btn11 { float:right; font-size:12px; font-weight:normal; width:68px; height:25px; padding-left:20px; margin-left:10px; text-align:center; line-height:25px; background:url(../images/btn11.gif) no-repeat; color:#266392;}
+.g_title .btn03:hover{ 
+	text-decoration:none;
+    background:url(../images/btn02.gif) no-repeat; 
+}
+.g_title .btn04:hover{ 
+	text-decoration:none;
+}
+.g_title .btn09:hover { text-decoration:none;}
+.g_title .btn10:hover { text-decoration:none;}
+.g_title .btn11:hover { text-decoration:none;}
+.textareaI { width:300px; height:100px; border:1px solid #ccc;}
+.k_title2 { font-size:14px; color:#6e6e6e; font-weight:700; margin:10px 0;}
+.tab3 .radioIn { margin:0;}
+.tab3texa { width:400px; height:200px; border:1px solid #ccc;}
+
+
