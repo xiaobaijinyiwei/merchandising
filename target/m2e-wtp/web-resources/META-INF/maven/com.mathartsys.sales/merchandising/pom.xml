@@ -132,20 +132,23 @@
   </dependencies>
   <build>
   
-    <finalName>merchandising</finalName>
-    <directory>target</directory><!-- 这是打包的文件的路径。默认是该工程的根目录。 -->
-	<sourceDirectory>src</sourceDirectory><!-- 源文件名夹的名称。这里对应填写我们的src目录。 -->
-	<outputDirectory>WebRoot/WEB-INF/classes</outputDirectory><!--编译后的Java文件输出的文件夹位置。  -->
-	<testSourceDirectory>test/java</testSourceDirectory><!-- 测试文件源文件夹。这里与src文件夹的定义是相同的。在打包时有区别，打包时，test文件夹下的源文件和资源文件都不被打到war包里面。 -->
-	<resources><!-- 存放资源文件。这里的文件不需要编译，在部署打包时，直接复制这里的文件 -->
-		<resource>
-		<directory>src/resources</directory><!--  -->
-			<excludes>
-				<exclude>**/*.java</exclude><!--例外的文件类型。如果这里存放有.java文件，则仍然需要编译。  -->
-			</excludes>
-		</resource>
-	</resources>
-	<testResources><!-- 与上面resource的意义相同。 -->
+  <!--  
+    <finalName>merchandising</finalName>-->
+    <!--<directory>target</directory>  --><!-- 这是打包的文件的路径。默认是该工程的根目录。 -->
+	<!--<sourceDirectory>src</sourceDirectory>  --><!-- 源文件名夹的名称。这里对应填写我们的src目录。 -->
+	<!--<outputDirectory>WebRoot/WEB-INF/classes</outputDirectory> --><!--编译后的Java文件输出的文件夹位置。  -->
+	<!--<testSourceDirectory>test/java</testSourceDirectory> --><!-- 测试文件源文件夹。这里与src文件夹的定义是相同的。在打包时有区别，打包时，test文件夹下的源文件和资源文件都不被打到war包里面。 -->
+	<!--<resources> --><!-- 存放资源文件。这里的文件不需要编译，在部署打包时，直接复制这里的文件 -->
+	<!--	<resource> -->
+	<!--	<directory>src/resources</directory> --><!--  -->
+	<!--		<excludes> -->
+	<!--			<exclude>**/*.java</exclude> --><!--例外的文件类型。如果这里存放有.java文件，则仍然需要编译。  -->
+	<!--		</excludes> -->
+	<!--	</resource>-->
+	<!--</resources>-->
+	
+	<!--<testResources>--><!-- 与上面resource的意义相同。 -->
+	<!--
 		<testResource>
 			<directory>test/resources</directory>
 			<excludes>
@@ -154,7 +157,7 @@
 		</testResource>
 	</testResources> 
 	<scriptSourceDirectory>index.jsp</scriptSourceDirectory>
-    
+    -->
     
         <pluginManagement>
         <plugins>

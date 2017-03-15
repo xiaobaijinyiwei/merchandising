@@ -46,6 +46,7 @@ public class ServletResources {
 	 * 生成数据
 	 * @return
 	 */
+	/*
 	@Path("/load")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -107,11 +108,12 @@ public class ServletResources {
 //		list=dao1.findCommodityAll();
 //		return list;
 	}
-	
+	*/
 	
 	/**
 	 * 从首页以post方式查看详情
 	 */
+	/*
 	@Path("/march")
 	@POST
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -153,7 +155,7 @@ public class ServletResources {
 		//跳转到三月的展示页面
 		request.getRequestDispatcher("../../resources/jsp/March.jsp").forward(request, response);
 	}
-			
+		*/	
 	
 	
 	
@@ -395,6 +397,7 @@ public class ServletResources {
 	/**
 	 * 一月份的数据生成，页面跳转
 	 */
+	/*
 	@Path("/january")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -446,10 +449,12 @@ public class ServletResources {
 		request.getRequestDispatcher("../../resources/jsp/January.jsp").forward(request, response);
 		return null;
 	}
+	*/
 	
 	/**
 	 * 二月份的数据生成，页面跳转
 	 */
+	/*
 	@Path("/february")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -501,10 +506,11 @@ public class ServletResources {
 		request.getRequestDispatcher("../../resources/jsp/February.jsp").forward(request, response);
 		return null;
 	}
-	
+	*/
 	/**
 	 * 三月份的数据生成，页面跳转
 	 */
+	/*
 	@Path("/march_GET")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -556,11 +562,11 @@ public class ServletResources {
 		return null;
 	}
 	
-	
+	*/
 	/**
 	 * 一月所有商品的总销售数量展示
 	 */
-	
+	/*
 	@Path("/SumJanuary")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -606,11 +612,12 @@ public class ServletResources {
 		return null;
 	}
 	
-	
+	*/
 	
 	/**
 	 * 二月所有商品的总销售数量展示
 	 */
+	/*
 	
 	@Path("/SumFebruary")
 	@GET
@@ -656,12 +663,12 @@ public class ServletResources {
 		request.getRequestDispatcher("../../resources/jsp/February.jsp").forward(request, response);	
 		return null;
 	}
-	
+	*/
 	
 	/**
 	 * 三月所有商品的总销售数量展示
 	 */
-	
+	/*
 	@Path("/SumMarch")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -711,12 +718,13 @@ public class ServletResources {
 		
 		
 		
-		
+	*/	
 		
 		
 	/**
 	 *删除所有数据
 	 */
+	/*
 	@Path("/delete")
 	@GET
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_ATOM_XML})
@@ -725,5 +733,6 @@ public class ServletResources {
 		dao.removeCommodityAll();
 		return "delete successfully";
 	}
+	*/
 	
 }
